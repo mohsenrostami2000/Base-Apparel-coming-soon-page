@@ -110,7 +110,7 @@ body {
     top: 5rem;
     left: 50%;
     transform: translate(-50%);
-    animation: slider 1s;
+    animation: slider .5s;
     /* animation-duration: 1s; */
 }
 /* error massage ------------------- */
@@ -129,7 +129,7 @@ body {
     top: 5rem;
     left: 50%;
     transform: translate(-50%);
-    animation: slider 1s;
+    animation: slider .5s;
 }
 
 .error {
@@ -141,7 +141,7 @@ body {
 .hide {
     position: absolute;
     top: -100px;
-    animation: hide-slider 2s;
+    animation: hide-slider .5s;
 }
 
 /* footer -------------------------------- */

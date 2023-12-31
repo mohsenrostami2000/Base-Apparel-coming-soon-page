@@ -18,7 +18,6 @@ btn.addEventListener('click', function validation (e) {
         
     } else {
         if(email === ""){
-            // alert('please enter your email')
             emptyError();
         } else {
             validationError();
@@ -30,30 +29,39 @@ btn.addEventListener('click', function validation (e) {
 
 
 function successResult() {
+    if(success.classList.contains('hide')){
+        success.classList.remove('hide');
+    }
     success.innerHTML = `<p>Thanks for submiting</p>`;
         success.style.display = "block";
         setTimeout(() => {
             success.classList.add('hide');
             form.reset();
-        }, 3000);
+        }, 2000);
 }
 
 function emptyError() {
+    if(error.classList.contains('hide')){
+        error.classList.remove('hide');
+    }
     error.innerHTML = `<p>Please enter your email</p>
     <img src="./images/icon-error.svg" alt="error">`;
     
     error.style.display = 'flex'
     setTimeout(() => {
         error.classList.add('hide')
-    }, 2000)
+    }, 1500)
 }
 
 function validationError() {
+    if(error.classList.contains('hide')){
+        error.classList.remove('hide');
+    }
     error.innerHTML = `<p>Email format is not valid</p>
     <img src="./images/icon-error.svg" alt="error">`;
     
     error.style.display = 'flex'
     setTimeout(() => {
         error.classList.add('hide')
-    }, 2000)
+    }, 1500)
 }

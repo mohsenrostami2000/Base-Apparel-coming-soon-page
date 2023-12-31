@@ -10,7 +10,7 @@
   <!-- style -->
   <link rel="stylesheet" href="./style.css">
   <!-- script -->
-  <script src="./script.js"></script>
+  <script src="./script.js" type="module"></script>
   <style>
     
   </style>
@@ -26,10 +26,10 @@
         Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
       </p> 
 
-      <form>
+      <form id="form">
         <div class="input-container">
-          <input type="text" id="email" placeholder="Email Address" required>
-          <button>
+          <input type="text" id="email" placeholder="Email Address">
+          <button class="btn">
            <img src="./images/icon-arrow.svg" alt="arrow image">
           </button>
         </div>
@@ -37,9 +37,12 @@
     </div>
 
     <div class="right-container">
-      <img src="./images/hero-desktop.jpg" alt="person">
+      <img src="./images/hero-desktop.jpg" alt="person" class="person-desktop">
     </div>
-  
+    <div class="success"></div>
+
+    <div class="error"></div>
+    </div>
   </main>
 
   <footer>
